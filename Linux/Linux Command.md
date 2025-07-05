@@ -110,4 +110,37 @@ ps aux > processes.txt && df -h >> processes.txt && free -h >> processes.txt
 9. `cp 복사하고 싶은 파일 복사된 파일 이름`: 파일 복사하기
 	- ex: `cp note.txt note1.txt`
 
+10. `mv 원본파일 대상파일`: 파일을 이동하거나 파일 이름 변경시 사용
+	- ex1: 파일 이름 변경
+	```bash
+# note2 파일을 note3으로 이름 변경
+mv note2 note3
+```
+		- 결과: `note2` 파일이 `note3`으로 이름이 바뀜
+		- `note3`은 기존 `note2`의 내용을 그대로 가지게 됨
+		- 원본 `note2` 파일은 더 이상 존재하지 않음
 
+	- ex2: 파일을 다른 폴더로 이동
+		```bash
+# document.txt를 Documents 폴더로 이동
+mv document.txt ~/Documents/
+```
+
+	- ex3: 파일 이동과 동시에 이름 변경
+		```bash
+# report.txt를 Documents 폴더로 이동하면서 final_report.txt로 이름 변경
+mv report.txt ~/Documents/final_report.txt
+```
+
+	- ex4: 폴더 이름 변경
+		```bash
+# old_folder를 new_folder로 이름 변경
+mv old_folder new_folder
+```
+
+> [!WARNING]
+> - `mv`는 파일을 **이동**시키므로 원본 파일이 사라짐
+> -  대상 위치에 같은 이름의 파일이 있으면 덮어쓰기 됨
+> -  실수로 중요한 파일을 덮어쓰지 않도록 주의해야 함
+
+11. `file 파일이름`: 파일의 확장자가 정해지지 않은 파일의 형식을 보는 명령어
