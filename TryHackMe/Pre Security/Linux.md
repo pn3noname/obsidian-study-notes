@@ -234,5 +234,49 @@ wget https://assets.tryhackme.com/additional/linux-fundamentals/part3/myfile.txt
 ```
 
 2. Transferring files from your host - SCP (SSH)
+	- 호스트 간 파일 전송
+	- SCP (Secure Copy)는 파일을 안전하게 복사하는 방법
+	- 일반적인 `cp`명령어와 달리, SSH 프로토콜을 사용하여 두 컴퓨터 간에 인증과 암호화를 제공함
+	- SCP 작동 방식
+		- SOURCE (소스)와 DESTINATION (목적지) 모델로 작동하며, 다음과 같은 작업이 가능함
+			- 현재 시스템에서 원격 시스템으로 파일 및 디렉토리 복사
+				```bash
+scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt
+```
+			- 원격 시스템에서 현재 시스템으로 파일 및 디렉토리 복사
+				```bash
+scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt
+```
 
+3. Serving files from your host - WEB
+	- 호스트에서 파일 제공 - 웹 서버
+	- Ubuntu 머신에는 Python3가 기본으로 설치되어 있음
+	- Python은 "HTTPServer"라는 가벼운 모듈을 제공하여 컴퓨터를 간단한 웹 서버로 만들 수 있음
+	- Python3 웹 서버 시작
+		```bash
+# 이 명령어를 실행하면 현재 디렉토리의 파일들이 제공됨
+python3 -m http.server
+```
+	- 웹 서버 사용 예시
+		```bash
+# 웹 서버 시작 (한 터미널에서)
+tryhackme@linux3:/webserver# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+
+# 다른 터미널에서 파일 다운로드
+tryhackme@mymachine:~# wget http://10.10.25.83:8000/myfile
+```
+	- 주의사항
+		- Python3 서버는 기본적으로 포트 8000에서 실해됨
+		- wget 명령어에서 포트 번호를 명시해야 함
+		- 웹 서버를 실행한 터미널은 유지해야 하며, wget은 다른 터미널에서 실행해야 함
+		- 파일의 정확한 이름과 위치를 알아야 함 (인덱싱 기능이 없음)
+	- 웹 서버의 한계
+		- 이 모듈은 인덱싱 방법이 없어서 사용하려는 파일의 정확한 이름과 위치를 알아야 함
+		- 더 고급 기능을 원한다면 Updog 같은 다른 웹 서버를 사용하는 것이 좋음
+
+> [!TIPS]
+> 1. wget: 웹에서 파일 다운로드
+> 2. SCP: SSH를 통한 안전한 파일 전송
+> 3. Python 웹 서버: 로컬 파일을 웹으로 제공
 
