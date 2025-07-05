@@ -161,3 +161,23 @@ mv old_folder new_folder
 > -  실수로 중요한 파일을 덮어쓰지 않도록 주의해야 함
 
 11. `file 파일이름`: 파일의 확장자가 정해지지 않은 파일의 형식을 보는 명령어
+
+12. `su 전환하려는 사용자명`: 원하는 유저로 전환되지만, 이전 사용자의 홈 디렉토리에 그대로 남아있음
+	- ex:
+	```bash
+tryhackme@linux2:~$ su user2
+Password:
+user2@linux2:/home/tryhackme$
+```
+
+1. `su -l 전환하려는 사용자명`: 원하는 유저로 전환되면서, 원하는 홈 디렉토리로 자동으로 이동하며, 완전한 로그인 환경을 제공받음
+	- ex:
+	```bash
+tryhackme@linux2:~$ su -l user2
+Password:
+user2@linux2:~$ pwd
+user2@:/home/user2$
+```
+
+
+
