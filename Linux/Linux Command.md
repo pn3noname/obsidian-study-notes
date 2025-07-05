@@ -102,3 +102,12 @@ tar -czf backup.tar.gz /home/user/ && echo "$(date): 백업 완료" >> backup.lo
 # 시스템 상태 확인 후 결과를 파일로 저장
 ps aux > processes.txt && df -h >> processes.txt && free -h >> processes.txt
 ```
+
+7. `rm`: removing files and folders
+
+8. `rm -r 폴더이름`: removing folder
+
+9. `cp 복사하고 싶은 파일 복사된 파일 이름`: 파일 복사하기
+	- ex: `cp note.txt note1.txt`
+
+
