@@ -1,4 +1,21 @@
-1. `ls -la */`: 현재 위치에서의 폴더와 그 안에 포함된 파일 목록까지 표시
+source: https://tryhackme.com
+
+1. `ls -la */`: 현재 위치에서의 폴더와 그 안에 포함된 숨겨진 파일 목록까지 표시
+	- 1-1. `ls -lh`: 일반 파일과 디렉토리만 표시
+	- 1-2. `ls -lah`: 일반 파일 + 숨겨진 파일 + 현재 디렉토리(.) + 상위 디렉토리(..) 모두 표시
+	- ex:
+	```bash
+# ls -lh 결과
+-rw-r--r-- 1 user group 1.2K Jan 15 10:30 file.txt
+drwxr-xr-x 2 user group 4.0K Jan 15 09:15 folder
+
+# ls -lah 결과  
+drwxr-xr-x 3 user group 4.0K Jan 15 10:30 .
+drwxr-xr-x 5 user group 4.0K Jan 15 09:00 ..
+-rw-r--r-- 1 user group  156 Jan 15 08:45 .bashrc
+-rw-r--r-- 1 user group 1.2K Jan 15 10:30 file.txt
+drwxr-xr-x 2 user group 4.0K Jan 15 09:15 folder
+```
 
 2. `find -name 파일이름.파일형식`: 파일 이름과 형식은 알지만, 어느 경로에 있는지 모를 때
 	- ex: `find -name note.txt`
