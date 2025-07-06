@@ -125,6 +125,11 @@ source: https://tryhackme.com
 		![[Pasted image 20250706213832.png]]
 	- 이 기능은 멀웨어가 시스템을 성공적으로 손상시킬 가능성을 줄여줌
 
+2. UAC 설정을 완전히 변경하거나 끌 수 있지만 권장하지 않음
+	![[Pasted image 20250706230309.png]]
+	- What is the command to open User Account Control Settings?
+		-> `UserAccountControlSetting.exe`
+
 ---
 
 ## 5. Windows Task Manager
@@ -174,6 +179,32 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 			- 이 섹션의 정보는 선택한 도구에 따라 변경됨
 			- 도구를 실행하려면 실행 프롬프트나 명령 프롬프트에서 해당 명령을 사용하거나 `launch` 버튼을 클릭할 수 있음
 		![[Pasted image 20250706224718.png]]
+
+4. What is the command to open User Account Control Settings?
+	-> `control.exe`
+
+---
+
+## 7. Computer Management
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
