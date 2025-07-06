@@ -587,8 +587,18 @@ apt remove sublime-text
 	- 운영체제 자체의 실행 상태와 사용자가 수행한 작업 (ex: 인증 시도)에 대한 정보를 저장하는 로그들도 있음
 	- 이러한 로그 파일들은 시스템 보안, 성능 모니터링, 문제 해결에 있어서 핵심적인 역할을 함
 
-
-
+> [!INFO]
+> ### 맥북에서 `/var/log` 확인하기
+> #### 1. 기본 명령어들
+> - 디렉토리 내용 확인: `ls /var/log`
+> - 자세한 정보와 함께 확인: `ls -la /var/log`
+> - 디렉토리로 이동한 후 확인: `cd /var/log` -> `ls -la`
+> #### 2. 유용한 추가 명령어들
+> - 권한 오류가 생길 시: `sudo ls -la /var/log`
+> - 파일 크기와 함께 확인: `ls -lah /var/log`
+> - 최근 수정된 파일 순으로 정렬: `ls -lat /var/log`
+> - 특정 로그 파일 내용 확인 (ex: `system.log`): `tail /var/log/system.log`
+> #### 3. macOS 특화된 로그 파일들: `system.log`, `install.log`, `wifi.log`
 
 
 
