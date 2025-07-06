@@ -498,7 +498,10 @@ ps aux | grep 프로세스명
 
 ## 6. Maintaining your system: Package Management
 
-1. 
+1. Repository란?
+	- 개발자들이 소트프웨어를 커뮤니티에 제출하고 싶을 때, `apt` 저장소에 제출함
+	- 승인되면 해당 프로그램과 도구들이 공개됨
+	- 리눅스의 두 가지 주요 장점이 여기서 빛을 발함: 사용자 접근성 & 오픈 소스 도구의 장점
 
 
 
