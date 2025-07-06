@@ -387,6 +387,7 @@ kill [PID]
 	2. 시그널 종류
 		- 프로세스를 종료할 때 보낼 수 있는 시그널
 			- `SIGTERM`: 프로세스를 종료하되, 정리 작업을 수행할 시간을 줌
+				(if we wanted to `cleanly` kill a process)
 			- `SIGKILL`: 프로세스를 즉시 강제 종료 (정리 작업 없음)
 			- `SIGSTOP`: 프로세스를 일시 중단 / 정지
 
