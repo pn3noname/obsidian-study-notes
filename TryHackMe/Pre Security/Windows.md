@@ -127,25 +127,53 @@ source: https://tryhackme.com
 
 ---
 
-## 5. 
+## 5. Windows Task Manager
+
+source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide/
 
 
 
 
 
 
+---
 
+## 6. System Configuration
 
+1. 개요
+	- 시스템 구성 유틸리티 (`MSConfig`)는 고급 문제 해결을 위한 도구
+	- 주요 목적: 시스템 시작 시 발생하는 문제를 진단하는 것
+	- 주의: 이 유틸리티를 열려면 로컬 관리자 권한이 필요함
 
+2. 실행 방법: 시작 메뉴에서 `msconfig` 입력
 
+3. 탭 구성
+	![[Pasted image 20250706223822.png]]
+	1. General
+		- Windows 부팅 시 로드할 장치와 서비스를 선택할 수 있음
+		- 옵션
+			- Normal
+			- Diagnostic
+			- Selective
 
+	2. Boot: 운영 체제의 다양한 부팅 옵션을 정의할 수 있음
 
+	3. Services 
+		- 실행 중이거나 중지된 상태에 관계없이 시스템에 구성된 모든 서비스를 나열함
+		- 서비스는 백그라운드에서 실행되는 특수한 유형의 응용 프로그램
+		![[Pasted image 20250706224200.png]]
 
+	4. Startup
+		- 중요!!: Microsoft는 시작 프로그램을 관리 (활성화 / 비활성화) 하기 위해 작업 관리자 (`taskmgr`)를 사용할 것을 권장함 => System Configuration은 시작 프로그램 관리 도구가 아님
+		- 참고: 일부 VM 환경에서는 작업 관리자에 시작 프로그램 탭이 표시되지 않을 수 있음
 
-
-
-
-
+	5. Tools
+		- 운영 체제를 추가로 구성할 수 있는 다양한 유틸리티 (도구) 목록을 제공함
+		- 각 도구에 대한 간단한 설명이 제공되어 해당 도구의 용도를 파악할 수 있음
+		- `Selected command:` 
+			- 이 섹션의 정보는 선택한 도구에 따라 변경됨
+			- 도구를 실행하려면 실행 프롬프트나 명령 프롬프트에서 해당 명령을 사용하거나 `launch` 버튼을 클릭할 수 있음
+		![[Pasted image 20250706224718.png]]
 
 
 
