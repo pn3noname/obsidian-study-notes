@@ -407,6 +407,7 @@ kill [PID]
 	- `systemctl` 명령어
 		- 시스템 서비스를 관리하는 명령어
 		- 시스템의 서비스와 장치들의 상태를 보여주는 출력
+		- macOS에서는 `launchctl`
 		- ex:
 			```bash
 systemctl [옵션] [서비스명]
