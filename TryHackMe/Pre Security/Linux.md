@@ -494,6 +494,36 @@ ps aux | grep 프로세스명
 7. 편집 방법
 	- Crontab은 `crontab -e` 명령어를 사용하여 편집할 수 있으며, 이때 Nano와 같은 편집기를 선택하여 크론탭을 수정할 수 있음
 
+---
+
+## 6. Maintaining your system: Package Management
+
+1. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
