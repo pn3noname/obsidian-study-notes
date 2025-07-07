@@ -267,17 +267,16 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 	1. 하드웨어 리소스
 	2. 구성요소
 	3. 소프트웨어 환경
+	시스템 요약 (System Summary)은 프로세서 브랜드 및 모델과 같은 컴퓨터의 일반적인 기술 사양을 표시함
 
+3. 각 섹션의 특징
+	1. Hardware Resources
+		![[Pasted image 20250707232119.png]]
+		- 일반적인 컴퓨터 사용자를 위한 것이 아님
 
-
-
-
-
-
-
-
-
-
+	2. Components
+		![[Pasted image 20250707232313.png]]
+		- 컴퓨터에 설치된 하드웨어 장치에 대한 구체적인 정보를 볼 수 있음
 
 
 
