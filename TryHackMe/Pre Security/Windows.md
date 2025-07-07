@@ -265,7 +265,8 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 2. 시스템 요약의 세 가지 섹션
 	![[Pasted image 20250707231350.png]]
 	1. 하드웨어 리소스
-
+	2. 구성요소
+	3. 소프트웨어 환경
 
 
 
