@@ -261,6 +261,7 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 1. 시스템 정보 (`msinfo32`) 도구란?
 	- Windows에는 Microsoft System Information (`Msinfo32.exe`)라는 도구가 포함되어 있음
 	- 이 오구는 컴퓨터에 대한 정보를 수집하고 하드웨어, 시스템 구성요소, 소프트웨어 환경에 대한 종합적인 보기를 제공하여 컴퓨터 문제를 진단하는 데 사용할 수 있음
+	- 즉, 컴퓨터의 하드웨어와 소프트웨어 환경을 종합적으로 파악할 수 있는 유용한 Windows 
 
 2. 시스템 요약의 세 가지 섹션
 	![[Pasted image 20250707231350.png]]
@@ -293,11 +294,12 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 				2. Settings > System > About > system info > Advanced system settings > Environment Variables
 				![[Pasted image 20250707233225.png]]
 
-
-
-
-
-
+4. 검색 기능
+	- `msinfo32` 유틸리티 하단에는 `Find what`이라는 검색 바가 있음
+	- 구성요소를 선택하고 `IP address` 검색
+		![[Pasted image 20250707233533.png]]
+		- Components -> Network -> Adapter -> check `IP Address`
+		- `Find what:``IP Address` -> `Find Next`
 
 
 
