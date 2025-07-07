@@ -277,11 +277,13 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 	2. Components
 		![[Pasted image 20250707232313.png]]
 		- 컴퓨터에 설치된 하드웨어 장치에 대한 구체적인 정보를 볼 수 있음
+		- 일부 섹션은 정보를 표시하지 않지만, `Display`와 `Input`과 같은 일부 섹션은 정보를 보여줌
 
-
-
-
-
+	3. Software Environment
+		![[Pasted image 20250707232531.png]]
+		- 운영 체제에 내장된 소프트웨어와 설치한 소프트웨어에 대한 정보를 볼 수 있음
+		- `Environment Variables`와 `Network Connections`과 같은 기타 세부 정보도 이 섹션에서 확인 가능
+		- 환경 변수 (`Environment Variables`)
 
 
 
