@@ -284,8 +284,14 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 		- 운영 체제에 내장된 소프트웨어와 설치한 소프트웨어에 대한 정보를 볼 수 있음
 		- `Environment Variables`와 `Network Connections`과 같은 기타 세부 정보도 이 섹션에서 확인 가능
 		- 환경 변수 (`Environment Variables`)
-
-
+			- 환경 변수는 운영 체제 환경에 대한 정보를 저장함
+			- 이 정보에는 운영 체제 경로, 운영 체제에서 사용하는 프로세서 수, 임시 폴더의 위치 등이 포함됨
+			- 환경 변수는 운영 체제와 다른 프로그램에서 사용하는 데이터를 저장함
+			- ex: `WINDIR` 환경 변수에는 Windows 설치 디렉토리의 위치가 포함되어 있음
+			- 환경 변수 보는 방법
+				1. Control Panel > System and Security > System > Advanced system settings > Environment Variables
+				2. Settings > System > About > system info > Advanced system settings > Environment Variables
+				![[Pasted image 20250707233225.png]]
 
 
 
