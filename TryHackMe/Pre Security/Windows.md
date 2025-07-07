@@ -188,6 +188,9 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 ## 7. Computer Management
 
 - 컴퓨터 관리 (`compmgmt`) 유틸리티는 시스템 구성 패널을 통해 사용할 수 있는 도구로, 세 가지 주요 섹션으로 구성되어 있음
+- 이 도구는 Windows 시스템 관리를 위한 통합 콘솔로, 시스템 관리자나 고급 사용자들이 시스템 모니터링, 하드웨어 관리, 서비스 제어 등의 작업을 수행할 때 사용하는 핵심 도구
+- 특히 이벤트 뷰어는 시스템 문제 해결에, 작업 스케줄러는 자동화 작업에, 디스크 관리는 저장소 관리에 매우 유용한 도구들
+- What is the command to open Computer Management? `compmgmt.msc`
 
 1. 시스템 도구 (System Tools)
 	![[Pasted image 20250707222933.png]]
@@ -227,6 +230,47 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 		- 용도: 로컬 또는 원격 컴퓨터 시스템의 성능 문제 해결
 
 	6. 장치 관리자 (Device Manager)
+		- 목적: 하드웨어 보기 및 구성
+		- 기능: 컴퓨터에 연결된 하드웨어 비활성화 등
+
+2. 저장소 (Storage)
+	1. 디스크 관리 (Disk Management)
+		- 목적: 고급 저장소 작업을 수행하는 Windows 시스템 유틸리티
+		- 주요 작업:
+			- 새 드라이브 설정
+			- 파티션 확장
+			- 파티션 축소
+			- 드라이브 문자 할당 또는 변경 (ex: `E:`)
+
+3. 서비스 및 응용 프로그램 (Services and Applications)
+	1. 서비스 (Services)
+		- 정의: 백그라운드에서 실행되는 특수한 유형의 응용 프로그램
+		- 기능: 서비스 활성화 / 비활성화 외에도 서비스 속성 보기 가능
+
+	2. WMI 제어 (WMI Control)
+		- 목적: Windows Management Instrumentation (WMI) 서비스 구성 및 제어
+		- 기능:
+			- 스크립팅 언어 (VBScript 또는 Windows PowerShell)를 통해 Windows 개인 컴퓨터 및 서버를 로컬 및 원격으로 관리
+			- WMIC (Windows Management Instrumentation Command-line) 명령줄 인터페이스 제공
+		- 참고: WMIC 도구는 Windows 10 버전 21H1에서 더 이상 사용되지 않으며, Windows PowerShell이 WMI용 도구를 대체함
+
+---
+
+## 8. System Information
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
