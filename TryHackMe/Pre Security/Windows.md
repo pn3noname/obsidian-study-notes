@@ -408,7 +408,29 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 
 ---
 
-## 13. 
+## 13. VSS; Volume Shadow Copy Service
+
+- VSS는 백업할 데이터의 일관된 셰도우 복사본 (스냅샷 또는 특정 시점 복사본)을 생성하는 데 필요한 작업들을 조정하는 서비스
+
+1. 저장 위치
+	- VSS는 보호가 활성화된 각 드라이브의 System Volume information 폴더에 저장됨
+
+2. VSS 기능
+	- VSS가 활성화되어 있으면 (System Protection 켜짐), `advanced system settings`에서 다음 작업을 수행할 수 있음
+		- 복원 지점 생성 (Create a restore point)
+		- 시스텀 복원 수행 (Perform system restore)
+		- 복원 설정 구성 (Configure restore settings)
+		- 복원 지점 삭제 (Delete restore points)
+
+	![[Pasted image 20250708210816.png]]
+
+	![[Pasted image 20250708211018.png]]
+
+3. 보안 관점에서의 위험성
+	- 악성코드 개발자들은 이 Windows 기능을 잘 알고 있어서, 악성코드에 이러한 파일들을 찾아서 삭제하는 코드를 포함시킴
+	- 이렇게 되면 오프라인 / 오프사이트 백업이 없는 한 랜섬웨어 공격으로부터 복구하는 것이 불가능해짐
+
+4. 참고: If you wish to interact hands-on with VSS, I suggest exploring Day 23 of [Advent of Cyber 2](https://tryhackme.com/room/adventofcyber2).
 
 
 
