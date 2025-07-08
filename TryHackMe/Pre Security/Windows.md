@@ -396,14 +396,19 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 		- 가장 제한적인 보안 설정이 적용됨
 
 2. 방화벽 설정 옵션
+	- 방화벽 켜기 / 끄기
+	- 모든 인바운드 연결 차단 ('Blocks all incoming connections, including those in the list of allowed apps')
 
+3. 방화벽을 통한 앱 혀용 ('Allow an app through firewall')
+	![[Pasted image 20250708205555.png]]
+	- 현재 방화벽 프로필 설정을 확인하고 개인 및 / 또는 공용 방화벽 프로필에서 여러 앱의 액세스 권한을 관리할 수 있음
+	- 일부 앱은 `Details` 버튼을 통해 추가 정보를 제공함
 
+4. Windows Defender 방화벽을 열기 위한 명령어: `WF.msc`
 
+---
 
-
-
-
-
+## 13. 
 
 
 
