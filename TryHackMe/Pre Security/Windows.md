@@ -361,3 +361,4 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 
 
 cwindowssystem32cmdexe c ipconfig
+ip
