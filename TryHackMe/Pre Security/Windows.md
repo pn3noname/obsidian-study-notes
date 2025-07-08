@@ -183,6 +183,10 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 4. What is the command to open User Account Control Settings?
 	-> `control.exe`
 
+5. In System Configuration, what is the full command for Internet Protocol Configuration?
+	-> 
+	![[Pasted image 20250708151026.png]]
+
 ---
 
 ## 7. Computer Management
@@ -355,10 +359,37 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 		- `net` 명령어는 네트워크 리소스 관리에 주로 사용되며, 여러 하위 명령어를 지원함
 		- 매개변수 없이 `net`만 입력하면 사용 가능한 하위 명령어들을 확인할 수 있음
 
+---
+
+## 11. Registry Editor
 
 
 
 
 
-cwindowssystem32cmdexe c ipconfig
-ip
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
