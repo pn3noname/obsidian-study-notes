@@ -301,5 +301,62 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 		- Components -> Network -> Adapter -> check `IP Address`
 		- `Find what:``IP Address` -> `Find Next`
 
+---
+
+## 9. Resource Monitor (`resmon`)
+
+- Resource Monitor는 Windows 시스템에서 제공하는 고급 시스템 모니터링 도구
+- System Configuration panel의 도구 중 하나로 제공됨
+
+1. 주요 기능
+	- 프로세스별 및 전체 시스템 사용량 정보 표시: CPU, 메모리, 디스크, 네트워크 사용량을 실시간으로 모니터링
+	- 상세 정보 제공: 개별 파일 핸들과 모듈을 사용하는 프로세스 정보 표시
+	- 고급 필터링: 하나 이상의 프로세스 (응용 프로그램 또는 서비스)와 관련된 데이터를 분리하여 분석
+	- 서비스 관리: 서비스 시작, 중지, 일시 정지, 재시작 가능
+	- 응답하지 않는 응용 프로그램 종료: 사용자 인터페이스에서 직접 처리
+	- 프로세스 분석: 교착 상태 (deadlock) 프로세스와 파일 잠금 충돌을 식별하여 데이터 손실 없이 문제 해결 지원
+
+2. 인터페이스 구성
+	![[Pasted image 20250708113155.png]]
+
+---
+
+## 10. Command Prompt (`cmd`)
+
+1. 기본 정보 조회 명령어
+	1. 시스템 정보
+		- `hostname`: 컴퓨터 이름을 출력
+		- `whoami`: 현재 로그인한 사용자 이름을 출력
+
+	2. 네트워크 관련 명령어
+		- `ipconfig`: 컴퓨터의 네트워크 주소 설정을 표시
+			![[Pasted image 20250708114623.png]]
+		- `netstat`: 프로토콜 통계 및 현재 TCP / IP 네트워크 연결 상태를 표시
+			![[Pasted image 20250708114746.png]]
+
+	3. 도움말 확인 방법
+		- 일반적인 도움말 확인: 대부분의 명령어는 뒤에 `/?` 매개변수를 사용하여 도움말 확인 가능
+			- ex: `ipconfig /?`
+		- net 명령어의 도움말: net 명령어는 특별한 구문을 사용함
+			- `net help`: 전체 도움말 표시
+			- `net help user`: 특정 하위 명령어 도움말 표시
+			- 다른 유용한 하위 명령어: localgroup, use, share, session
+
+	4. 명령어 매개변수
+		- 명령어에 매개변수를 추가하면 실행 결과가 달라짐
+		- ex: `netstat -a`, `netstat -b`, `netstat -e`
+
+	5. 유용한 기능
+		- `cls`: 명령 프롬프트 화면을 지우는 명령어
+		- `net`: 네트워크 리소스를 관리하는 주요 명령어
+			![[Pasted image 20250708115643.png]]
+
+	6. 네트워크 관리
+		- `net` 명령어는 네트워크 리소스 관리에 주로 사용되며, 여러 하위 명령어를 지원함
+		- 매개변수 없이 `net`만 입력하면 사용 가능한 하위 명령어들을 확인할 수 있음
+
+
+
+
 
 
