@@ -359,6 +359,19 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 		- `net` 명령어는 네트워크 리소스 관리에 주로 사용되며, 여러 하위 명령어를 지원함
 		- 매개변수 없이 `net`만 입력하면 사용 가능한 하위 명령어들을 확인할 수 있음
 
+> [!INFO]
+> ### `netstat` 대신 `ss` 사용 가능
+> ​- 다만, `netstat`은 Linux와 macOS에서 둘 다 사용 가능하지만, `ss`는 Linux 전용 도구
+> - macOS 대안
+> 	- `netstat`
+> 	- `lsof`: 파일과 네트워크 연결 정보 표시
+> 	- `nettop`: 실시간 네트워크 사용량 모니터링
+> - `ss` 활용
+> 	- `ss -tuln`: TCP & UDP 포트의 모든 수신 표시
+> 	- `ss -tp`: 프로세스 정보와 함께 TCP 연결 표시
+> 	- `ss -s`: 소켓 통계 요약 표시
+> 
+
 ---
 
 ## 11. Registry Editor
