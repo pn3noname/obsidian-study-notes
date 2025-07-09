@@ -361,6 +361,7 @@ source: https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide
 
 > [!INFO]
 > ### `netstat` 대신 `ss` 사용 가능
+> - Socket Statistics
 > ​- 다만, `netstat`은 Linux와 macOS에서 둘 다 사용 가능하지만, `ss`는 Linux 전용 도구
 > - macOS 대안
 > 	- `netstat`
